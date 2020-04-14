@@ -65,7 +65,13 @@ RUN ${PIP} --no-cache-dir install --upgrade \
     matplotlib \
     opencv-python \
     pandas \
-    scipy
+    scipy \
+    torch \
+    torchvision \
+    torchtext \
+    torchsummary \
+    slacker \
+    tqdm
 
 # Some TF tools expect a "python" binary
 RUN ln -s $(which ${PYTHON}) /usr/local/bin/python 
