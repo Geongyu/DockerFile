@@ -72,7 +72,8 @@ RUN ${PIP} --no-cache-dir install --upgrade \
     torchsummary \
     slacker \
     tqdm \
-    visdom
+    visdom \
+    wandb
 
 # Some TF tools expect a "python" binary
 RUN ln -s $(which ${PYTHON}) /usr/local/bin/python 
